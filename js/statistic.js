@@ -122,7 +122,7 @@ async function fetchAvailableDates() {
     const text = await response.text();
     const files = text.trim().split('\n');
 
-    const dateRegex = /(\d{4}-\d{2}-\d{2})_AI_enhanced_Chinese\.jsonl/;
+    const dateRegex = /(\d{4}-\d{2}-\d{2})_AI_enhanced_English\.jsonl/;
     const dates = [];
     files.forEach(file => {
       const match = file.match(dateRegex);
