@@ -240,7 +240,7 @@ async function loadPapersByDateRange(startDate, endDate) {
     allPapersData = []; // 重置全局论文数据
     
     for (const date of validDatesInRange) {
-      const response = await fetch(`data/${date}_AI_enhanced_Chinese.jsonl`);
+      const response = await fetch(`data/${date}_AI_enhanced_English.jsonl`);
       const text = await response.text();
       const dataPapers = parseJsonlData(text, date);
       
